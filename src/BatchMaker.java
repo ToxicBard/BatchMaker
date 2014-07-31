@@ -138,7 +138,7 @@ public class BatchMaker
             if(subtitleTrack >= -1)
                 toReturn = (new StringBuilder()).append(toReturn).append("-sid ").append(subtitleTrack).append(" ").toString();
             toReturn +=extraCLI + " ";
-            toReturn = (new StringBuilder()).append(toReturn).append("-ovc xvid -xvidencopts pass=1 ").toString();
+            toReturn = (new StringBuilder()).append(toReturn).append("-ass -ovc xvid -xvidencopts pass=1 ").toString();
             toReturn = (new StringBuilder()).append(toReturn).append("-o \"").append(outputDirectory).toString();
             toReturn = (new StringBuilder()).append(toReturn).append(getFileNameWithoutExtension(files[i])).append(".avi\"").toString();
             toReturn = (new StringBuilder()).append(toReturn).append("\n").toString();
